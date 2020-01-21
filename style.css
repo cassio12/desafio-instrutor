@@ -323,7 +323,7 @@ header {
     width: 70%;
 }
 
-.boxImgDog-frame1 {
+.frames {
     z-index: 0;
     position: absolute;
     width: 16%;
@@ -331,8 +331,22 @@ header {
     border-radius: 12px;
     border: solid 5px;
     border-color: #fff;
+}
+.boxImgDog-frameFirst {
     top: 125rem;
     left: 5rem;
+}
+.boxImgDog-frameSecond {
+    top: 125rem;
+    left: 27rem;
+}
+.boxImgDog-frameThird {
+    top: 125rem;
+    left: 49.2rem;
+}
+.boxImgDog-frameFourth {
+    top: 125rem;
+    left: 71.3rem;
 }
 .boxImgDog-img {
     z-index: 0;
