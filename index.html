@@ -114,39 +114,42 @@
                 </div>
             </div>
             <div class="sectionAdopt-boxSlide">
-                <div class="boxSlide-boxAdoptDog">
-                    <div class="boxAdoptDog-boxImgDog">
-                        <div class="boxImgDog-frameFirst frames"></div>
-                        <img class="boxImgDog-img" src="./img/Cao1.jpg">
-                    </div>
-                    <p class="boxAdoptDog-textName">Luna</p>
-                    <p class="boxAdoptDog-textAge">5 meses</p>
+                <img id="arowBack" class="boxSlide-arowLeft" onclick="backSlide()" src="./img/setinha_esquerda.svg">
+                <div class="boxSlide-boxFrame">
+                    <div class="boxFrame-frameFirst frames"></div>
+                    <div class="boxFrame-frameSecond frames"></div>
+                    <div class="boxFrame-frameThird frames"></div>
+                    <div class="boxFrame-frameFourth frames"></div>
                 </div>
                 <div class="boxSlide-boxAdoptDog">
                     <div class="boxAdoptDog-boxImgDog">
-                        <div class="boxImgDog-frameSecond frames"></div>
-                        <img class="boxImgDog-img" src="./img/Cao2.jpg">
+                        <img id="firstDog" class="boxImgDog-img" src="./img/Cao1.jpg">
                     </div>
-                    <p class="boxAdoptDog-textName">Duque</p>
-                    <p class="boxAdoptDog-textAge">2 anos</p>
+                    <p id="firstName" class="boxAdoptDog-textName">Luna</p>
+                    <p id="firstAge" class="boxAdoptDog-textAge">5 meses</p>
                 </div>
                 <div class="boxSlide-boxAdoptDog">
                     <div class="boxAdoptDog-boxImgDog">
-                        <div class="boxImgDog-frameThird frames"></div>
-                        <img class="boxImgDog-img" src="./img/Cao3.jpg">
+                        <img id="secondDog" class="boxImgDog-img" src="./img/Cao2.jpg">
                     </div>
-                    <p class="boxAdoptDog-textName">Pérola</p>
-                    <p class="boxAdoptDog-textAge">1 ano e 4 meses</p>
+                    <p id="secondName" class="boxAdoptDog-textName">Duque</p>
+                    <p id="secondAge" class="boxAdoptDog-textAge">2 anos</p>
+                </div>
+                <div class="boxSlide-boxAdoptDog">
+                    <div class="boxAdoptDog-boxImgDog">
+                        <img id="thirdDog" class="boxImgDog-img" src="./img/Cao3.jpg">
+                    </div>
+                    <p id="thirdName" class="boxAdoptDog-textName">Pérola</p>
+                    <p id="thirdAge" class="boxAdoptDog-textAge">1 ano e 4 meses</p>
                 </div> 
                 <div class="boxSlide-boxAdoptDog">
                     <div class="boxAdoptDog-boxImgDog">
-                        <div class="boxImgDog-frameFourth frames"></div>
-                        <img class="boxImgDog-img" src="./img/Cao4.jpg">
+                        <img id="fourthDog" class="boxImgDog-img" src="./img/Cao4.jpg">
                     </div>
-                    <p class="boxAdoptDog-textName">Thor</p>
-                    <p class="boxAdoptDog-textAge">3 meses</p>
+                    <p id="fourthName" class="boxAdoptDog-textName">Thor</p>
+                    <p id="fourthAge" class="boxAdoptDog-textAge">3 meses</p>
                 </div> 
-                <img class="boxSlide-arowLeft" src="./img/setinha_direita.svg">  
+                <img id="arowNext" class="boxSlide-arowRight" onclick="nextSlide()" src="./img/setinha_direita.svg">  
             </div>
         </section>
     </main>
@@ -162,22 +165,22 @@
             <p class="boxContacts-endText">Rua Rodrigues Alves, nº 5 Rio de Janeiro - RJ</p>
         </div>
         <div class="footer-boxListFooter">
-            <div class="boxListFooter-lineVertical"></div>
             <ul class="boxListFooter-boxList">
                 <li class="boxList-item">
-                    <a class="item-link" href="#">Home</a>
+                    <a class="item-link" href="#Home">Home</a>
                 </li>
                 <li class="boxList-item">
-                    <a class="item-link" href="#">Sobre</a>
+                    <a class="item-link" href="#Sobre">Sobre</a>
                 </li>
                 <li class="boxList-item">
-                    <a class="item-link" href="#">Adote</a>
+                    <a class="item-link" href="#Adote">Adote</a>
                 </li>
                 <li class="boxList-item">
-                    <a class="item-link" href="#">Seja voluntário</a>
+                    <a class="item-link" href="#SejaVoluntario">Seja voluntário</a>
                 </li>
             </ul>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
