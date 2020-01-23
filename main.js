@@ -72,6 +72,8 @@ let boxFrame = document.querySelector('.boxSlide-boxFrame')
 function nextSlide() {
     
     if (contador <= 8){
+        contador = 4    
+        imgNumber = 0
         let setaNext = document.getElementById('arowNext');
         let setaBack = document.getElementById('arowBack');
         
@@ -107,25 +109,26 @@ function nextSlide() {
             boxFrame.style.margin = "1rem 0 0 4.2rem"
         }
 	}
-	else {
-        contador = 4
-        imgNumber = 0
-        saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
-        saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
-        saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log(contador, imgNumber)
-		console.log('não entrou');
-	}
+	// else {
+    //     contador = 3
+    //     imgNumber = 0
+    //     saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
+    //     saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
+    //     saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
+    //     console.log(contador, imgNumber)
+	// 	console.log('não entrou');
+	// }
 
 }
 
 // Slide function back
 function backSlide() {
-    if (contador > 4){
+    if (contador > 0){
+        contador = 3
+        imgNumber = 3
         let setaNext = document.getElementById('arowNext')
         let setaBack = document.getElementById('arowBack')
         
-        // console.log(contador, imgNumber)
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
@@ -157,13 +160,13 @@ function backSlide() {
             boxFrame.style.margin = "1rem 0 0 5.6rem"
         }
 	}
-	else {
-        contador = 7
-        imgNumber = 3
-        saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
-        saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
-        saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log(contador, imgNumber)
-		console.log('não entrou');
-	}
+	// else {
+    //     contador = 7
+    //     imgNumber = 3
+    //     saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
+    //     saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
+    //     saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
+    //     console.log(contador, imgNumber)
+	// 	console.log('não entrou');
+	// }
 }
