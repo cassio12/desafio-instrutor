@@ -69,6 +69,7 @@ let boxFrame = document.querySelector('.boxSlide-boxFrame')
 
 // Slide function next
 function nextSlide() {
+    var litleDesck = window.matchMedia("(max-width: 1024px)")
     if (contador <= 8){
         contador = 4    
         imgNumber = 0
@@ -100,6 +101,9 @@ function nextSlide() {
             setaNext.style.display = "none"
             setaBack.style.display = "block"
             boxFrame.style.margin = "1rem 0 0 5.6rem"
+            if (litleDesck.matches) {
+                boxFrame.style.margin = "1rem 0 0 4.6rem"
+            }
         }
         else {
             setaNext.style.display = ""
@@ -121,6 +125,7 @@ function nextSlide() {
 
 // Slide function back
 function backSlide() {
+    var litleDesck = window.matchMedia("(max-width: 1024px)")
     if (contador > 0){
         contador = 3
         imgNumber = 3
@@ -151,6 +156,9 @@ function backSlide() {
             setaNext.style.display = ""
             setaBack.style.display = "none"
             boxFrame.style.margin = "1rem 0 0 4.2rem"
+            if (litleDesck.matches) {
+                boxFrame.style.margin = "1rem 0 0 3.2rem"
+            }
         }
         else {
             setaNext.style.display = ""

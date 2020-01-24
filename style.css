@@ -21,10 +21,20 @@ header {
 .boxLogo-img {
     width: 70%;
 }
+@media (max-width:1024px) {
+    .boxLogo-img {
+        width: 62%;
+    }
+}
 .navegation {
     width: 57%;
     display: flex;
     align-items: center;
+}
+@media (max-width:1024px){
+    .navegation {
+        width: 50%;
+    }
 }
 .navegatio-boxList {
     width: 94%;
@@ -38,7 +48,7 @@ header {
 }
 
 .itemPosition {
-    width: 97px;
+    width: 13%;
     display: flex;
     justify-content: flex-end;
 }
@@ -51,7 +61,7 @@ header {
 }
 .itemList-imgPaws {
     position: absolute;
-    width: 28px;
+    width: 2%;
 }
 .itemList-link {
     font-size: 1.6rem;
@@ -59,6 +69,11 @@ header {
     color: #00CA88;
     font-family: 'urbane-rounded';
     font-weight: 700;
+}
+@media (max-width:1024px) {
+    .itemList-link {
+        font-size: 1rem;
+    }
 }
 
 /* --------------- Home --------------- */
@@ -93,18 +108,35 @@ header {
 .boxContato-boxImgMedia {
     height: 32%;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     flex-direction: column;
     margin: 0 0 .5rem 0;
 }
+@media (max-width:1024px) {
+    .boxContato-boxImgMedia {
+        height: 34%;
+    }
+}
 .boxImgMedia-item {
-    width: 32px;
+    width: 95%;
     padding-bottom: 2rem
+}
+@media (max-width:1024px) {
+    .boxImgMedia-item {
+        width: 63%;
+        padding-bottom: 1.5rem
+    }
 }
 .boxImgMedia-lineVertical {
     width: 1px;
     height: 23%;
     background-color: #ffffff;
+}
+@media (max-width:1024px) {
+    /* .boxImgMedia-lineVertical {
+        height: 20%;
+    } */
 }
 .boxImgMedia-emailText {
     font-family: 'urbane-rounded';
@@ -114,6 +146,11 @@ header {
     margin-top:2rem;
     writing-mode: vertical-rl;
     transform:rotate(180deg);
+}
+@media (max-width:1024px) {
+    .boxImgMedia-emailText {
+        font-size: .8rem;
+    }
 }
 .sectionHome-boxHome {
     width: 90%;
@@ -129,6 +166,11 @@ header {
     justify-content: flex-end;
     flex-direction: column;
 }
+@media (max-width:1024px) {
+    .boxHome-boxText {
+        height: 54%;
+    }
+}
 .boxText-paragraph {
     width: 80%;
     font-size: 1.7rem;
@@ -137,11 +179,22 @@ header {
     margin: 0;
     color:#ffffff;
 }
+@media (max-width:1024px) {
+    .boxText-paragraph {
+        /* width: 75%; */
+        font-size: 1.2rem;
+    }
+}
 .boxText-title {
     font-family: 'urbane-rounded';
     font-size: 5rem;
     color: #ffffff;
     margin: 0;
+}
+@media (max-width:1024px) {
+    .boxText-title {
+        font-size: 3.7rem;
+    }
 }
 .boxHome-boxButons {
     width: 71%;
@@ -163,6 +216,11 @@ header {
     font-weight: 700;
     box-shadow: 0px 16px 23px -20px #000;
 }
+@media (max-width:1024px) {
+    .boxButons-firstButton {
+        font-size: 1rem;
+    }
+}
 .boxButons-secondButton {
     width: 46%;
     height: 59%;
@@ -174,6 +232,11 @@ header {
     font-family: 'urbane-rounded';
     font-weight: 700;
     box-shadow: 0px 16px 23px -20px #000;
+}
+@media (max-width:1024px) {
+    .boxButons-secondButton {
+        font-size: 1rem;
+    }
 }
 
 /* --------------- About --------------- */
@@ -200,6 +263,11 @@ header {
     color: #00CA88;
     margin: 0;
 }
+@media (max-width:1024px) {
+    .boxInfo-title {
+        font-size: 3rem;
+    }
+}
 .boxInfo-paragraphBox {
     width: 72%;
     height: 66%;
@@ -211,6 +279,11 @@ header {
     width: 100%;
     font-size: 1.1rem;
     margin: 0;
+}
+@media (max-width:1024px) {
+    .paragraphBox-txt {
+        font-size: .78rem;
+    }
 }
 .boxInfo-button {
     width: 56%;
@@ -226,6 +299,11 @@ header {
     font-weight: 700;
     box-shadow: 0px 16px 23px -20px #000;
 }
+@media (max-width:1024px) {
+    .boxInfo-button {
+        font-size: 1rem;
+    }
+}
 .sectionAbout-boxImagCircles {
     width: 50%;
     height: 83%;
@@ -233,6 +311,7 @@ header {
 .boxImagCircles-img {
     z-index: 0;
     position: absolute;
+    width: 27%;
     margin: 7rem 0 0 0 ;
 }
 .boxImagCircles-boxCirclesAbout {
@@ -251,6 +330,11 @@ header {
     border-radius: 50%;
     opacity: 0.45;
     margin-top: 4rem;
+}
+@media (max-width:1024px) {
+    .boxCirclesAbout-first {
+        margin-top: 5rem;
+    }
 }
 .boxCirclesAbout-second {
     width: 37%;
@@ -293,6 +377,12 @@ header {
     flex-direction: column;
     padding-left: 8rem;
 }
+@media (max-width:1024px) {
+    .boxFirst-boxInfoAdopt {
+        padding-left: 5rem;
+        height: 75%;
+    }
+}
 .boxInfoAdopt-title {
     font-size: 4rem;
     font-family: 'urbane-rounded';
@@ -300,11 +390,21 @@ header {
     color: #ffffff;
     margin: 0;
 }
+@media (max-width:1024px){
+    .boxInfoAdopt-title {
+        font-size: 3rem;
+    }
+}
 .boxInfoAdopt-paragraph {
     width: 64%;
     margin: 0;
     font-size: 1.1rem;
     color: #ffffff;
+}
+@media (max-width:1024px) {
+    .boxInfoAdopt-paragraph {
+        font-size: .78rem;
+    }
 }
 .boxFirst-boxCirclesAdopt {
     width: 50%;
@@ -351,6 +451,12 @@ header {
     flex-direction: row;
     margin: 1rem 0 0 4.2rem;
 }
+@media (max-width:1024px) {
+    .boxSlide-boxFrame {
+        width: 79%;
+        margin: 1rem 0 0 3.2rem;
+    }
+}
 .boxSlide-boxAdoptDog {
     display: flex;
     flex-direction: column;
@@ -359,6 +465,11 @@ header {
 .boxAdoptDog-boxImgDog {
     width: 70%;
 }
+@media (max-width:1024px) {
+    .boxAdoptDog-boxImgDog {
+        width: 65%;
+    }
+}
 .frames {
     width: 18%;
     height: 23vh;
@@ -366,9 +477,21 @@ header {
     border: solid 5px;
     border-color: #fff;
 }
+@media (max-width:1024px) {
+    .frames {
+        width: 17%;
+        height: 22vh;
+        border-width: 3px;
+    }
+}
 .boxSlide-arowRight {
     display: block;
     padding-bottom: 10rem;
+}
+@media (max-width:1024px) {
+    .boxSlide-arowRight {
+        padding-bottom: 8rem;
+    }
 }
 .boxImgDog-img {
     z-index: 0;
@@ -399,6 +522,11 @@ header {
 .footer-imgLogo {
     width: 30%;
 }
+@media (max-width:1024px) {
+    .footer-imgLogo {
+        width: 25%;
+    }
+}
 .footer-boxContacts {
     width: 23%;
     height: 50%;
@@ -412,6 +540,11 @@ header {
     justify-content: space-between;
     margin:  0;
 }
+@media (max-width:1024px) {
+    .boxImgContacts-item {
+        width: 25%;
+    }
+}
 .boxContacts-emailText {
     font-family: 'urbane-rounded';
     font-weight: 700;
@@ -419,12 +552,22 @@ header {
     color: #00CA88;
     margin: 0;
 }
+@media (max-width:1024px) {
+    .boxContacts-emailText {
+        font-size: 1rem;
+    }
+}
 .boxContacts-endText {
     font-family: 'urbane-rounded';
     font-weight: 700;
     font-size: 1.3rem;
     color: #00CA88;
     margin: 0;
+}
+@media (max-width:1024px) {
+    .boxContacts-endText {
+        font-size:1rem;
+    }
 }
 
 .footer-boxListFooter {
@@ -455,4 +598,9 @@ header {
     font-size: 1.3rem;
     color: #00CA88;
     text-decoration: none;
+}
+@media (max-width:1024px) {
+    .item-link {
+        font-size: 1rem;
+    }
 }
