@@ -67,6 +67,12 @@ let saidaCao = [
 ];
 let boxFrame = document.querySelector('.boxSlide-boxFrame')
 
+// Evento de over nas imagens 
+// console.log(saidaCao[imgNumber].img.addEventListener('mouseover',function(){console.log('text')}))
+saidaCao[0].img.map(item, function(){
+    console.log(item)
+})
+
 // Slide function next
 function nextSlide() {
     var litleDesck = window.matchMedia("(max-width: 1024px)")
@@ -76,7 +82,6 @@ function nextSlide() {
         let setaNext = document.getElementById('arowNext');
         let setaBack = document.getElementById('arowBack');
         
-        console.log(contador, imgNumber);
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
@@ -95,8 +100,6 @@ function nextSlide() {
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log('entrou')
-        console.log(contador, imgNumber)
         if (setaNext.style.display == "") {
             setaNext.style.display = "none"
             setaBack.style.display = "block"
@@ -117,8 +120,6 @@ function nextSlide() {
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log(contador, imgNumber)
-		console.log('não entrou');
 	}
 
 }
@@ -150,8 +151,6 @@ function backSlide() {
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img)
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log('entrou')
-        console.log(contador, imgNumber)
         if (setaBack.style.display == "block"){
             setaNext.style.display = ""
             setaBack.style.display = "none"
@@ -172,7 +171,6 @@ function backSlide() {
         saidaCao[imgNumber].img.setAttribute('src', animals[contador].img);
         saidaCao[imgNumber].nome.innerHTML = animals[contador].nome;
         saidaCao[imgNumber].idade.innerHTML = animals[contador].idade;
-        console.log(contador, imgNumber)
-		console.log('não entrou');
 	}
 }
+

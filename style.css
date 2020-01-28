@@ -222,8 +222,8 @@ header {
     }
 }
 .boxButons-secondButton {
-    width: 46%;
-    height: 59%;
+    width: 100%;
+    height: 100%;
     border-radius: 50px;
     border-width: 0;
     background-color: #fff;
@@ -237,6 +237,10 @@ header {
     .boxButons-secondButton {
         font-size: 1rem;
     }
+}
+.linkAdopt {
+    width: 40%;
+    height: 62%;
 }
 
 /* --------------- About --------------- */
@@ -287,8 +291,7 @@ header {
 }
 .boxInfo-button {
     width: 56%;
-    height: 10%;
-    margin-top: 1.2rem;
+    height: 100%;
     margin-left: 1.2rem;
     border-radius: 50px;
     border-width: 0;
@@ -298,11 +301,17 @@ header {
     font-family: 'urbane-rounded';
     font-weight: 700;
     box-shadow: 0px 16px 23px -20px #000;
+    outline: none;
 }
 @media (max-width:1024px) {
     .boxInfo-button {
         font-size: 1rem;
     }
+}
+.linkSejaVoluntario {
+    height: 11%;
+    text-decoration: none;
+    color: #fff
 }
 .sectionAbout-boxImagCircles {
     width: 50%;
@@ -441,6 +450,11 @@ header {
 .boxSlide-arowLeft {
     display: none;
     padding-bottom: 10rem;
+}
+@media (max-width:1024px) {
+    .boxSlide-arowLeft {
+        padding-bottom: 8rem;
+    }
 }
 .boxSlide-boxFrame {
     z-index: -1;
@@ -603,4 +617,89 @@ header {
     .item-link {
         font-size: 1rem;
     }
+}
+
+/* --------------- Seja Voluntario --------------- */
+.backgroundGreen {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #93e1c7;
+}
+.backgroundGreen-modalBox {
+    width: 50%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.modalBox-closeBox {
+    width: 96%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: flex-end;
+}
+.a {
+    width: 4%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.closeIcon {
+    width: 100%;
+}
+.modalBox-voluntario {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.voluntario-infoBox {
+    width: 84%;
+    height: 55%;
+}
+.infoBox-title {
+    height: 30%;
+    font-family: 'urbane-rounded';
+    font-weight: 700;
+    font-size: 3rem;
+    color: #00CA88;
+    margin: 0;
+}
+.infoBox-paragraph {
+    width: 82%;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.voluntario-form {
+    width: 84%;
+    height: 62%;
+}
+.form-boxInput {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxInput-nameItem {
+    width: 71%;
+}
+.boxInput-idadeItem {
+    width: 24%;
+}
+.boxInput-emailItem {
+    width: 100%;
+}
+.txtArea {
+    height: 30%;
+    border: solid 1px;
+    outline: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    text-align: center;
 }
